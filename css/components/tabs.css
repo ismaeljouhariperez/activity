@@ -1,0 +1,48 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.tabs > section {
+  order: 3;
+  width: 100%;
+  display: none;
+}
+
+.tabs > input {
+  opacity: 0;
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  margin-right: 16px;
+  border-bottom: 1px solid transparent;
+}
+
+.tabs > input[type=radio]:checked + label {
+  border-bottom: 1px solid black;
+}
+
+.tabs > input[type=radio]:checked + label + section {
+  display: block;
+}
+
+.tabs > label {
+  margin: .5em 1em;
+  opacity:.2;
+  cursor:pointer;
+  color:black;
+}
+
+.tabs > label:last-of-type {
+  border-right: none;
+}
+
+.tabs > input[type=radio]:checked + label {
+  text-transform: underline;
+  opacity: 1;
+}
+
+.tabs section {
+  padding: 1em;
+}

@@ -1,0 +1,44 @@
+.notifications .notification {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0px 15px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.notification .notification-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.notification .notification-actions {
+  opacity: 0;
+  display: flex;
+  transition: ease .3s;
+}
+
+.notification:hover .notification-actions {
+  opacity: 1;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+}
+
+.notification .notification-actions a {
+  color: #999999;
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.notification p {
+  margin: 0;
+  line-height: 1.3;
+}
